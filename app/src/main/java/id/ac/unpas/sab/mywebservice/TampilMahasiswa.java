@@ -147,7 +147,7 @@ public class TampilMahasiswa extends AppCompatActivity implements View.OnClickLi
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
-                        deleteMahasiswa();
+                        updateMahasiswa();
                         startActivity(new Intent(TampilMahasiswa.this,TampilSemuaMhs.class));
                     }
                 });
@@ -202,7 +202,7 @@ public class TampilMahasiswa extends AppCompatActivity implements View.OnClickLi
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface arg0, int arg1) {
-                        updateMahasiswa();
+                        deleteMahasiswa();
                         startActivity(new Intent(TampilMahasiswa.this,TampilSemuaMhs.class));
                     }
                 });
@@ -222,7 +222,7 @@ public class TampilMahasiswa extends AppCompatActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         if(v == buttonUpdate){
-            confirmDeleteMahasiswa();
+            confirmUpdateMahasiswa();
         }
 
         if(v == buttonDelete){
